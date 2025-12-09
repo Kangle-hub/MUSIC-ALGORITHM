@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.linalg import eigh
 
 """
-初始化参数
+初始化参数 
 K 用户数量
 I IRS反射单元数量
 wavelength 波长
@@ -50,7 +50,7 @@ def generate_temporal_signals(true_aoas, L, Q, phi_bar, SNR_dB):
     signal_power = 1
     sigma2 = signal_power / SNR
 
-    # 一开始仿真结果低信噪比下失效原因 我给的增益均为0.1 过小
+#=== 一开始仿真结果低信噪比下失效原因 我给的增益均为0.1 过小 ===#
     beta = np.ones(K) * 0.35
     delta = 0.35
 
